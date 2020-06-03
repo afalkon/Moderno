@@ -200,7 +200,6 @@
     &-author {
         display: flex;
         align-items: center;
-
         .product__item-avatar {
             width: 30px;
             height: 30px;
@@ -220,7 +219,6 @@
 
 .products__bottom-btn {
     text-align: center;
-
     button {
         margin: 45px 5px 0;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
@@ -233,9 +231,7 @@
 }
 
 //End of Products Description
-
 //Begining of Product slider Section
-
 .product-slider {
     padding: 110px 0 120px;
     .slick-dots {
@@ -253,7 +249,6 @@
                     transition: background-color .3s;
                 }
             }
-
             button {
                 font-size: 0;
                 border: none;
@@ -267,14 +262,65 @@
     }
 }
 
-.Ellipse_6 {
-  border-radius: 50%;
-  background-color: rgb(232, 232, 232);
-  position: absolute;
-  left: 915px;
-  top: 2761px;
-  width: 22px;
-  height: 22px;
-  z-index: 168;
+//End of Product Slider Section
+//Begining of Advantages Section
+.advantages {
+    background-color: $bg;
+    text-align: center;
+    padding: 100px 0 110px;
+    &__title {
+        font-size: 36px;
+        line-height: 60px;
+        color: #fff;
+        margin-bottom: 85px;
+        font-weight: 700;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        padding: 0 20px;
+        &-images {
+            width: 120px;
+            height: 120px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            transition: .3s;
+
+            g {
+                transition: .3s;
+            }
+        }
+        &-title {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 23px;
+            font-weight: 500;
+            transition: .3s
+        }
+        &-text {
+            font-size: 15px;
+            color: #b0bec5;
+        }
+    }
 }
 
+.advantages__item:hover {
+    .advantages__item-images {
+        background-color: $green;
+        g {
+            fill: #ffffff;
+        }
+    }
+    .advantages__item-title {
+        color: $green;
+    }
+}
