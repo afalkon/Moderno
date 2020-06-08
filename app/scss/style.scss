@@ -243,6 +243,9 @@
             & + li {
                 margin-left: 8px;
             }
+            & button {
+                cursor: pointer;
+            }
             &.slick-active {
                 button {
                     background-color: $green;
@@ -294,7 +297,6 @@
             justify-content: center;
             margin-bottom: 30px;
             transition: .3s;
-
             g {
                 transition: .3s;
             }
@@ -326,9 +328,7 @@
 }
 
 //End of Advantages Section
-
 //Begining of Author Section
-
 .author {
     background-size: cover;
     background-repeat: no-repeat;
@@ -337,7 +337,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     &__box {
         max-width: 650px;
         width: 100%;
@@ -369,10 +368,8 @@
 
 //End of Authir Section
 //Begining of Tutorial Section
-
 .tutorial {
     padding: 60px 0 120px;
-
     &__title {
         font-size: 36px;
         color: $bg;
@@ -380,7 +377,6 @@
         font-weight: 700;
         margin-bottom: 65px;
     }
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -393,7 +389,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         &-images {
             width: 370px;
             height: 270px;
@@ -412,3 +407,161 @@
 }
 
 //End of Tutorial Section
+//Start of Footer
+.footer {
+    background-color: #263238;
+    &__top {
+        padding: 115px 0 100px;
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-col:first-child,
+        &-col:last-child {
+            width: 270px;
+        }
+        &-title {
+            color: #fff;
+            font-size: 22px;
+            line-height: 22px;
+            padding-bottom: 31px;
+            position: relative;
+            margin-bottom: 31px;
+        }
+        &-title::after {
+            content: '';
+            position: absolute;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+            bottom: 0;
+            left: 2px;
+        }
+        &-text {
+            line-height: 24px;
+            color: #b7c3c8;
+            margin-bottom: 40px;
+        }
+        &-address,
+        &-phone {
+            font-size: 14px;
+            color: #fff;
+            margin-top: 27px;
+            padding-left: 30px;
+            position: relative;
+        }
+        &-address::before,
+        &-phone::before {
+            position: absolute;
+            font-family: 'icomoon';
+            left: 0;
+            color: $green;
+            font-size: 18px;
+        }
+        &-address::before {
+            content: '\f041';
+        }
+        &-phone:before {
+            content: '\f095';
+        }
+        &-form {
+            position: relative;
+            input {
+                background-color: #2f3c43;
+                width: 100%;
+                height: 38px;
+                padding-left: 15px;
+                padding-right: 50px;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 14px;
+                placeholder {
+                    color: #697378;
+                }
+            }
+            button {
+                position: absolute;
+                width: 43px;
+                height: 38px;
+                background-color: $green;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                right: 0;
+                &::before {
+                    content: '\f1d8';
+                    position: absolute;
+                    font-family: 'icomoon';
+                    color: #fff;
+                    top: 10px;
+                    left: 12px;
+                }
+            }
+        }
+    }
+    &__links {
+        li {
+            &+li {
+                margin-top: 20px;
+            }
+            a {
+                color: #b7c3c8;
+                padding-left: 24px;
+                position: relative;
+            }
+            a::before {
+                content: '\f105';
+                position: absolute;
+                font-family: 'icomoon';
+                color: $green;
+                left: 0;
+                font-size: 18px;
+            }
+        }
+    }
+    &__socialLinks {
+        display: flex;
+        margin-bottom: 40px;
+        li {
+            a {
+                width: 28px;
+                height: 28px;
+                display: inline-block;
+            }
+            & + li {
+                margin-left: 8px;
+            }
+        }
+    }
+    .footer__socialLinks-facebook {
+        background: url('../images/icons/social_sprite.png') -0 -0;
+    }
+    .footer__socialLinks-twitter {
+        background: url('../images/icons/social_sprite.png') -28px -0;
+    }
+    .footer__socialLinks-youtube {
+        background: url('../images/icons/social_sprite.png') -0 -28px;
+    }
+    .footer__socialLinks-pinterest {
+        background: url('../images/icons/social_sprite.png') -28px -28px;
+    }
+    .footer__socialLinks-linkedin {
+        background: url('../images/icons/social_sprite.png') -56px -0;
+    }
+    .footer__top-newsletter {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    &__bottom {
+        border-top: 1px solid #424d53;
+        padding: 28px 0;
+        text-align: center;
+    }
+    &__copy {
+        color: #919699;
+    }
+}
+
+//End of Footer
