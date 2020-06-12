@@ -22,6 +22,19 @@ $(".js-range-slider").ionRangeSlider({
         prefix: "$"
     });
 
+$('.icon-th-list').on('click', function(){
+    $('.product-page__items').addClass('list'),
+    $('.product__item').addClass('list'),
+    $('.icon-th-list').addClass('active'),
+    $('.icon-th-large').removeClass('active')
+});
+$('.icon-th-large').on('click', function(){
+    $('.product-page__items').removeClass('list'),
+    $('.product__item').removeClass('list'),
+    $('.icon-th-list').removeClass('active'),
+    $('.icon-th-large').addClass('active')
+});
+
 
     var mixer = mixitup('.products__inner-box');
 });
